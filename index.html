@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>What are we going to learn about in the Webinar?</h3>
+                <span class="arrow">&#9662;</span>
+            </div>
+            <div class="faq-answer">
+                <p>We are going to learn more about ERP, GRS, CRS and how it will maximize the productivity of institutions and why as a educational institution its essential to optimize all these software.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>When Webinar is be conducted?</h3>
+                <span class="arrow">&#9662;</span>
+            </div>
+            <div class="faq-answer">
+                <p>Webinar is being conducted on August 6</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>Will there be any recorded sessions in case if i miss the Webinar?
+                </h3>
+                <span class="arrow">&#9662;</span>
+            </div>
+            <div class="faq-answer">
+                <p>Incase if you miss the webinar you will receive the recorded session through your Email id.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>How do i get Support if i have Technical issue while attending my webinar session?
+                </h3>
+                <span class="arrow">&#9662;</span>
+            </div>
+            <div class="faq-answer">
+                <p> If you face any technical issue during the session we will be guiding you through email  zoho @mtabtechnology.com</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>How long will the Webinar last?
+                </h3>
+                <span class="arrow">&#9662;</span>
+            </div>
+            <div class="faq-answer">
+                <p>The duration of the webinar session will be maximum 30 minutes.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faq-question" onclick="toggleFaq(this)">
+                <h3>Can i attend Webinar session in Mobile phone or Laptop?
+                </h3>
+                <span class="arrow">&#9662;</span>
+            </div>
+            <div class="faq-answer">
+                <p>You can atten the webinar session in mobile or  laptop but  But laptop is more  preferable .</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleFaq(element) {
+    const answer = element.nextElementSibling;
+    const arrow = element.querySelector('.arrow');
+
+    if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+        arrow.classList.remove('rotate');
+    } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        arrow.classList.add('rotate');
+    }
+}
+
+    </script>
+</body>
+</html>
