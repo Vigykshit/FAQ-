@@ -13,20 +13,16 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 20px;
     border-radius: 8px;
-    max-width: 900px;
+    max-width: 1100px;
     width: 100%;
 }
 
-.faq-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
+
 
 .faq {
     border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .faq-question {
@@ -35,7 +31,8 @@
     align-items: center;
     cursor: pointer;
     color: #000000;
-    font-weight: 800;
+  
+  
 }
 
 .faq-question h3 {

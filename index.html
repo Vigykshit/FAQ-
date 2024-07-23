@@ -63,24 +63,34 @@
                 <span class="arrow">&#9662;</span>
             </div>
             <div class="faq-answer">
-                <p>You can atten the webinar session in mobile or  laptop but  But laptop is more  preferable .</p>
+                <p>You can attend the webinar session in mobile or  laptop but  But laptop is more  preferable .</p>
             </div>
         </div>
     </div>
     <script>
-        function toggleFaq(element) {
-    const answer = element.nextElementSibling;
-    const arrow = element.querySelector('.arrow');
 
-    if (answer.style.maxHeight) {
-        answer.style.maxHeight = null;
-        arrow.classList.remove('rotate');
-    } else {
-        answer.style.maxHeight = answer.scrollHeight + "px";
-        arrow.classList.add('rotate');
-    }
-}
+function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const arrow = element.querySelector('.arrow');
 
+            // Close all other answers
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            allAnswers.forEach(ans => {
+                if (ans !== answer) {
+                    ans.style.maxHeight = null;
+                    ans.previousElementSibling.querySelector('.arrow').classList.remove('rotate');
+                }
+            });
+
+            // Toggle current answer
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                arrow.classList.remove('rotate');
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                arrow.classList.add('rotate');
+            }
+        }
     </script>
 </body>
 </html>
