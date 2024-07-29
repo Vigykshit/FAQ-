@@ -6,7 +6,7 @@ body {
 }
 
 .agenda-container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -17,7 +17,7 @@ body {
 }
 
 table {
-    width: 100%;
+   width:100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
@@ -42,3 +42,12 @@ tr:nth-child(even) {
 .agenda{
     font-size: 1.5rem ;
 }
+@media (max-width: 768px) {
+    .agenda-container {
+        padding: 10px;
+    }
+
+    .meeting-agenda th, .meeting-agenda td {
+        padding: 8px;
+    }
+} 
