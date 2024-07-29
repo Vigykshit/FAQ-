@@ -1,60 +1,44 @@
- body {
+body {
     font-family: Arial, sans-serif;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-} 
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
 
-.faq-container {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 20px;
+.agenda-container {
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
-    max-width: 1100px;
-    width: 100%;
-}
-
-
-
-.faq {
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-}
-
-.faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    color: #000000;
-  
-  
-}
-
-.faq-question h3 {
-    margin: 0;
-}
-
-.faq-answer {
-    max-height: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    padding: 20px;
 }
 
-.faq-answer p {
-    margin: 0;
-    padding: 10px 0;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #e0e0e0;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #d1e7dd;
     color: #333;
 }
 
-.arrow {
-    transition: transform 0.3s ease;
+tr:nth-child(even) {
+    background-color: #f8f9fa;
 }
-
-.arrow.rotate {
-    transform: rotate(180deg);
+.agenda{
+    font-size: 1.5rem ;
 }

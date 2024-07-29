@@ -3,103 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Section</title>
+    <title>Meeting Agenda</title>
     <link rel="stylesheet" href="faq.css">
 </head>
 <body>
-    <div class="faq-container">
-        <div class="faq">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <h3>Who will be benefitted from this webinar?</h3>
-                <span class="arrow">&#9662;</span>
-            </div>
-            <div class="faq-answer">
-                <p>Decision makers in the education sector, including training placement officers, directors, and other key stakeholders.</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <h3>What are we going to learn about in the Webinar?</h3>
-                <span class="arrow">&#9662;</span>
-            </div>
-            <div class="faq-answer">
-                <p>We are going to learn more about ERP, GRS, CRS and how it will maximize the productivity of institutions and why as a educational institution its essential to optimize all these software.</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <h3>When Webinar is to be conducted?</h3>
-                <span class="arrow">&#9662;</span>
-            </div>
-            <div class="faq-answer">
-                <p>6<sup>th</sup>August 2024 at 11.30 AM  mode is virtual </p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <h3>Will there be any recorded sessions in case if i miss the Webinar?
-                </h3>
-                <span class="arrow">&#9662;</span>
-            </div>
-            <div class="faq-answer">
-                <p>Yes, if you have registered for the webinar the recording session will be sent through your registered email id .</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <h3>How do i get Support if i have Technical issue while attending my webinar session?
-                </h3>
-                <span class="arrow">&#9662;</span>
-            </div>
-            <div class="faq-answer">
-                <p> If you have registered for the webinar we will be guiding you through email zoho @mtabtechnology.com</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <h3>How long will the Webinar last?
-                </h3>
-                <span class="arrow">&#9662;</span>
-            </div>
-            <div class="faq-answer">
-                <p>30 minutes(Extended as per the queries).</p>
-            </div>
-        </div>
-        <div class="faq">
-            <div class="faq-question" onclick="toggleFaq(this)">
-                <h3>Can i attend Webinar session in Mobile phone or Laptop?
-                </h3>
-                <span class="arrow">&#9662;</span>
-            </div>
-            <div class="faq-answer">
-                <p>if  you have registered for the webinar you can attend the webinar session on a mobile.</p>
-            </div>
-        </div>
+    <div class="agenda-container">
+        <table>
+            <tr class="agenda">
+                <th>Agenda</th>
+                <th>Description</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td><b>Welcome and Introduction</b></td>
+                <td>Brief overview of the webinar and key objectives.</td>
+                <td>5 min</td>
+            </tr>
+            <tr>
+                <td><b>Keynote Presentation</b></td>
+                <td>Insights on how educational institutions can use Zoho One for effective management and operations.</td>
+                <td>5 min</td>
+            </tr>
+            <tr>
+                <td><b>Discussion</b></td>
+                <td>Presentation on the current challenges faced by educational institutions and potential solutions.</td>
+                <td>5 min</td>
+            </tr>
+            <tr>
+                <td><b>Interactive Q&A Session</b></td>
+                <td>Engage with us directly to ask questions and discuss key topics in detail.</td>
+                <td>5 min</td>
+            </tr>
+            <tr>
+                <td><b>Closing Remarks</b></td>
+                <td>Final thoughts and time for attendees to connect with each other.</td>
+                <td>5 min</td>
+            </tr>
+        </table>
     </div>
-    <script>
-
-function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const arrow = element.querySelector('.arrow');
-
-            // Close all other answers
-            const allAnswers = document.querySelectorAll('.faq-answer');
-            allAnswers.forEach(ans => {
-                if (ans !== answer) {
-                    ans.style.maxHeight = null;
-                    ans.previousElementSibling.querySelector('.arrow').classList.remove('rotate');
-                }
-            });
-
-            // Toggle current answer
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-                arrow.classList.remove('rotate');
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                arrow.classList.add('rotate');
-            }
-        }
-    </script>
 </body>
 </html>
